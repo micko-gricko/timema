@@ -19,6 +19,8 @@ module add Bioinformatics/Software/vital-it
 
 module load UHTS/Analysis/bamaddrg/2012.05.26
 
+#remove sample 32
+
 bamaddrg -b tcm_f1.bam -r mf1 > tcm_f1.RG.bam
 bamaddrg -b tcm_f2.bam -r mf2 > tcm_f2.RG.bam
 bamaddrg -b tcm_f3.bam -r mf3 > tcm_f3.RG.bam
