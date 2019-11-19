@@ -1,0 +1,45 @@
+#install.packages("installr")
+#library(installr)
+#updateR()
+#install.packages("hierfstat")
+library("hierfstat")
+install.packages("adegenet")
+library("adegenet")
+setwd("C:/Users/Micko/Desktop/dve/m")
+read.table("populations.fst_1-2.tsv") -> tcmfst
+tcmfst
+hist(tcmfst$V8, main = "FSTs T. californicum", breaks = 100, xlab = "FSTs" )
+head(tcmfst)
+subset(tcmfst, tcmfst$V8 == 1) -> cali_fst
+head(cali_fst)
+length(cali_fst [,1])
+subset(tcmfst, tcmfst$V8 >= 0 & tcmfst$V8 < 0.1) -> cali_less
+head(cali_less)
+length(cali_less [,1])
+subset(tcmfst, tcmfst$V8 >= 0.1 & tcmfst$V8 < 0.2) -> cali_les
+head(cali_les)
+length(cali_les [,1])
+subset(tcmfst, tcmfst$V8 >= 0.2 & tcmfst$V8 < 0.3) -> cali_le
+head(cali_le)
+length(cali_le [,1])
+subset(tcmfst, tcmfst$V8 >= 0.3 & tcmfst$V8 < 0.4) -> cali_l
+head(cali_l)
+length(cali_l [,1])
+subset(tcmfst, tcmfst$V8 >= 0.4 & tcmfst$V8 < 0.5) -> cali_
+head(cali_)
+length(cali_ [,1])
+subset(tcmfst, tcmfst$V8 >= 0.5 & tcmfst$V8 < 0.6) -> cali
+head(cali)
+length(cali [,1])
+subset(tcmfst, tcmfst$V8 >= 0.6 & tcmfst$V8 < 0.7) -> cal
+head(cal)
+length(cal [,1])
+subset(tcmfst, tcmfst$V8 >= 0.7 & tcmfst$V8 < 0.8) -> ca
+head(ca)
+length(ca [,1])
+subset(tcmfst, tcmfst$V8 >= 0.8 & tcmfst$V8 < 0.9) -> c
+head(c)
+length(c [,1])
+subset(tcmfst, tcmfst$V8 >= 0.9 & tcmfst$V8 < 1) -> cc
+head(cc)
+length(cc [,1])
