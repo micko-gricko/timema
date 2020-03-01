@@ -8,9 +8,9 @@ library("adegenet")
 
 #first for Timema cristinae 10k then 1k
 
-setwd("C:/Users/Micko/Desktop/1-Master project/Data/TDcoord/")
+setwd("C:/Users/Micko/Desktop/1-Master project/Data/FST_TD_EXPESSION//")
 
-dat <- read.delim("tdtce.txt", sep = "\t", header = TRUE)
+dat <- read.delim("TCE_td.txt", sep = "\t", header = TRUE)
 head(dat)
 #dat<-as.data.frame(dat)
 #new <- dat[dat$TajimaD!='NaN',]
@@ -21,9 +21,9 @@ summary(dat)
 
 #Timema californicum 10k, 1k 
 
-setwd("C:/Users/Micko/Desktop/1-Master project/Data/TDcoord/")
+setwd("C:/Users/Micko/Desktop/1-Master project/Data/FST_TD_EXPESSION//")
 
-dat2 <- read.delim("tdtcm.txt", sep = "\t", header = TRUE)
+dat2 <- read.delim("TCM_td.txt", sep = "\t", header = TRUE)
 dat2
 head(dat2)
 #dat<-as.data.frame(dat)
